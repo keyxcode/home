@@ -8,58 +8,51 @@
         <meta name="viewport" content="initial-scale=1, width=device-width">
         <title>MALAN MAKES NOISE</title>
     </head>
-    <body>
-        <!--BIG HEADER-->
-        <br><br>
-        <div>
-            <h1><a href="index.html">MALAN MAKES NOISE</a></h1>
-        </div>
-        <br><br>
-        <!--NAVIGATION BUTTONS-->
-        <nav class="btn-group">
-            <button onclick="window.location.href= 'index.html'">HOME</button>
-            <button onclick="window.location.href= 'music.html'">MUSIC</button>
-            <button onclick="window.location.href= 'gallery.html'">GALLERY</button>
-            <button onclick="window.location.href= 'contact.html'">CONTACT</button>
-        </nav>
-        <hr>
-        <!--MUSIC PLAYLISTS-->
-        <div class="music-playlist">
-            <table>
-                <tr>
-                    <td>
-                        <iframe src="https://open.spotify.com/embed/album/78QKbBkzflPsgnFFlV3O2P?utm_source=generator" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <iframe src="https://open.spotify.com/embed/album/5yHvMJoM5I4QwHB2KHlCrP?utm_source=generator" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <iframe src="https://open.spotify.com/embed/album/3CQBgC2EMZkKGCmY8PCn8u?utm_source=generator" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-                    </td>
-                </tr>
-            </table>
-
-        </div>
-        <br>
-        <hr>
-        <br><br>
-        <!--FOOTER-->
-        <footer class="footer">
+    <body id="music-body">
+        <div class="container">
+            <!--BIG HEADER-->
+            <div class="header">
+                <h1><a href="index.html">MALAN MAKES NOISE</a></h1>
+            </div>
+            <!--NAVIGATION BUTTONS-->
+            <nav class="btn-group">
+                <button onclick="window.location.href= 'index.html'">HOME</button>
+                <button onclick="window.location.href= 'music.html'">MUSIC</button>
+                <button onclick="window.location.href= 'gallery.html'">GALLERY</button>
+                <button onclick="window.location.href= 'contact.html'">CONTACT</button>
+            </nav>
+            <!--LINE-->
+            <hr>
+            <!--MUSIC PLAYLISTS-->
+            <div class="music-playlist">
+                <table>
+                    <tr>
+                        <td>
+                            <iframe src="https://open.spotify.com/embed/album/78QKbBkzflPsgnFFlV3O2P?utm_source=generator" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <iframe src="https://open.spotify.com/embed/album/5yHvMJoM5I4QwHB2KHlCrP?utm_source=generator" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <iframe src="https://open.spotify.com/embed/album/3CQBgC2EMZkKGCmY8PCn8u?utm_source=generator" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                        </td>
+                    </tr>
+                </table>
+            </div>
             <br>
-            All rights reserved &#169; MALAN
+            <!--LINE-->
+            <hr>
             <br><br>
-        </footer>
-        <!--JAVASCRIPT-->
-        <script>
-            function thank()
-            {
-                alert('Thank you for signing up!');
-            }
-            document.querySelector('form').addEventListener('submit', thank);
-        </script>
+            <!--FOOTER-->
+            <footer class="footer">
+                <p>
+                    All rights reserved &#169; MALAN
+                </p>
+            </footer>
+        </div>
     </body>
 </html>
