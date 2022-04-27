@@ -46,6 +46,7 @@ h1 a:hover {
 .btn-group {
     width: 100%;
     padding: 0 10vw;
+    height: 3rem;
 }
 
 button {
@@ -83,6 +84,7 @@ hr {
 #homepage-video iframe {
     width: 76vw;
     height: 42.75vw;
+    border-radius: 8px 0;
 }
 
 /*===============================================================*/
@@ -105,7 +107,7 @@ hr {
 
 .music-playlist iframe {
     padding: 5px;
-    border-radius: 12px;
+    border-radius: 12px 0;
     height: 220px;
     width: 100%;
 }
@@ -125,6 +127,7 @@ hr {
 .image-gallery img {
     max-width: 100%;
     max-height: 100%;
+    border-radius: 12px 0;
 }
 
 /*===============================================================*/
@@ -149,36 +152,41 @@ hr {
 
 .contact-form input {
     border-radius: 4px;
-    padding: 2vw;
-    margin: 1vw;
+    padding: 1vw;
+    margin: 0.25vw;
+    background-color: #30332E;
+    color: #FFFBFC;
+    border-radius: 8px;
 }
 
 .contact-form input[type=text] {
     width: 100%;
-    border: 1px solid #efefef;
+    border: 1px solid #FFFBFC;
 }
 
 .contact-form textarea {
     width: 100%;
     height: 300px;
-    padding: 2vw;
-    margin: 1vw;
-    border-radius: 4px;
-    border: 1px solid #efefef;
+    padding: 1vw;
+    margin: 0.25vw;
+    border-radius: 8px;
+    border: 1px solid #FFFBFC;
     resize: none;
+    color: #FFFBFC;
+    background-color: #30332E;
 }
 
 .contact-form input[type=submit] {
-    width: 6rem;
+    width: 10rem;
     border: none;
-    background-color: #efefef;
     cursor: pointer;
     transition-duration: 0.4s;
+    color: #FFFBFC;
 }
 
 .contact-form input[type=submit]:hover {
-    color: #FFFBFC;
-    background-color: #30332E;
+    color: #30332E;
+    background-color: #efefef;
 }
 
 /*===============================================================*/
@@ -209,4 +217,3 @@ hr {
 /*COLOR PALLETTE:
 https://coolors.co/010400-30332e-fffbfc-62bbc1-ec058e
 */
-
