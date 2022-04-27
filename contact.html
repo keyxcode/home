@@ -27,7 +27,7 @@
             <div class="contact-form">
                 <form>
                     <div id="send-a-message">
-                        - Send A Message :) -
+                        - Say Hi! :) -
                     </div>
                     <table>
                         <tr>
@@ -67,11 +67,17 @@
         </div>
         <!--JAVASCRIPT-->
         <script>
-            function thank()
+            btn = document.getElementById('submit');
+            btn.addEventListener('mousedown', function onClick()
             {
-                alert('Thank you for signing up!');
-            }
-            document.querySelector('form').addEventListener('submit', thank);
+                btn.style.backgroundColor = '#30332E';
+                btn.style.color = '#FFFBFC';
+            });
+            btn.addEventListener('mouseup', function onClick()
+            {
+                btn.style.backgroundColor = '#FFFBFC';
+                btn.style.color = '#30332E';
+            });
         </script>
     </body>
 </html>
