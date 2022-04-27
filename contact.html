@@ -8,47 +8,63 @@
         <meta name="viewport" content="initial-scale=1, width=device-width">
         <title>MALAN MAKES NOISE</title>
     </head>
-    <body>
-        <!--BIG HEADER-->
-        <br><br>
-        <div>
-            <h1><a href="index.html">MALAN MAKES NOISE</a></h1>
-        </div>
-        <br><br>
-        <!--NAVIGATION BUTTONS-->
-        <nav class="btn-group">
-            <button onclick="window.location.href= 'index.html'">HOME</button>
-            <button onclick="window.location.href= 'music.html'">MUSIC</button>
-            <button onclick="window.location.href= 'gallery.html'">GALLERY</button>
-            <button onclick="window.location.href= 'contact.html'">CONTACT</button>
-        </nav>
-        <hr>
-        <!--Contact form-->
-        <div class="contact-form">
-            <div>
-                    - Send A Message -
+    <body id="contact-body">
+        <div class="container">
+            <!--BIG HEADER-->
+            <div class="header">
+                <h1><a href="index.html">MALAN MAKES NOISE</a></h1>
             </div>
-            <div>
+            <!--NAVIGATION BUTTONS-->
+            <nav class="btn-group">
+                <button onclick="window.location.href= 'index.html'">HOME</button>
+                <button onclick="window.location.href= 'music.html'">MUSIC</button>
+                <button onclick="window.location.href= 'gallery.html'">GALLERY</button>
+                <button onclick="window.location.href= 'contact.html'">CONTACT</button>
+            </nav>
+            <!--LINE-->
+            <hr>
+            <!--CONTACT FORM-->
+            <div class="contact-form">
                 <form>
-                    <input autocomplete="off" placeholder="Email address" type="text">
-                </form>
-                <form>
-                    <textarea placeholder="Write your message..."></textarea>
+                    <div id="send-a-message">
+                        - Send A Message :) -
+                    </div>
+                    <table>
+                        <tr>
+                            <td>
+                                <input autocomplete="off" placeholder="First name" type="text">
+                            </td>
+                            <td>
+                                <input autocomplete="off" placeholder="Last name" type="text">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input autocomplete="off" placeholder="Email address" type="text">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <textarea placeholder="Write your message..."></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input id="submit" type="submit">
+                            </td>
+                        </tr>
+                    </table>
                 </form>
             </div>
-            <div>
-                <input id="submit" type="submit">
-            </div>
+            <!--LINE-->
+            <hr>
+            <!--FOOTER-->
+            <footer class="footer">
+                <p>
+                    All rights reserved &#169; MALAN
+                </p>
+            </footer>
         </div>
-        <br>
-        <hr>
-        <br><br>
-        <!--FOOTER-->
-        <footer class="footer">
-            <br>
-            All rights reserved &#169; MALAN
-            <br><br>
-        </footer>
         <!--JAVASCRIPT-->
         <script>
             function thank()
