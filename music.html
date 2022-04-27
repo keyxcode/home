@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+        <title>MALAN MAKES NOISE</title>
+    </head>
+    <body>
+        <!--BIG HEADER-->
+        <br><br>
+        <div>
+            <h1><a href="index.html">MALAN MAKES NOISE</a></h1>
+        </div>
+        <br><br>
+        <!--NAVIGATION BUTTONS-->
+        <nav class="btn-group">
+            <button onclick="window.location.href= 'index.html'">HOME</button>
+            <button onclick="window.location.href= 'music.html'">MUSIC</button>
+            <button onclick="window.location.href= 'gallery.html'">GALLERY</button>
+            <button onclick="window.location.href= 'contact.html'">CONTACT</button>
+        </nav>
+        <hr>
+        <!--MUSIC PLAYLISTS-->
+        <div class="music-playlist">
+            <table>
+                <tr>
+                    <td>
+                        <iframe src="https://open.spotify.com/embed/album/78QKbBkzflPsgnFFlV3O2P?utm_source=generator" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <iframe src="https://open.spotify.com/embed/album/5yHvMJoM5I4QwHB2KHlCrP?utm_source=generator" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <iframe src="https://open.spotify.com/embed/album/3CQBgC2EMZkKGCmY8PCn8u?utm_source=generator" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+        <br>
+        <hr>
+        <br><br>
+        <!--FOOTER-->
+        <footer class="footer">
+            <br>
+            All rights reserved &#169; MALAN
+            <br><br>
+        </footer>
+        <!--JAVASCRIPT-->
+        <script>
+            function thank()
+            {
+                alert('Thank you for signing up!');
+            }
+            document.querySelector('form').addEventListener('submit', thank);
+        </script>
+    </body>
+</html>
