@@ -1,8 +1,37 @@
+/*===============================================================*/
+/* GLOBAL */
 html {
     font-size: 16px;
 }
 
-/* Header */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: #30332E;
+    background-color: #FFFBFC;
+    text-align: center;
+    font-size: clamp(0.7rem, 4vw, 1rem);
+}
+
+.container {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0 0 1rem 0;
+}
+
+/*===============================================================*/
+/* HEADER */
+.header {
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+}
+
 h1 a {
     color: #30332E;
     text-decoration:none;
@@ -12,17 +41,11 @@ h1 a:hover {
     color: #30332E;
 }
 
-/* Body */
-body {
-    color: #30332E;
-    background-color: #FFFBFC;
-    text-align: center;
-    font-size: clamp(0.7rem, 4vw, 1rem);
-}
-
-/* Buttons */
+/*===============================================================*/
+/* NAV BUTTONS */
 .btn-group {
-    width: 80%;
+    width: 100%;
+    padding: 0 10vw;
 }
 
 button {
@@ -40,111 +63,149 @@ button:hover {
     color: #FFFBFC;
 }
 
-/* Separating Lines */
+/*===============================================================*/
+/* SEPARATING LINES */
 hr {
-    margin-left: 10vw;
-    margin-right: 10vw;
+    margin: 5vw 10vw;
     border-style: inset;
     border-width: 1px;
-    border-color: #FFFBFC
+    border-color: #efefef;
 }
 
-/* iFrame */
-#container-iframe {
-    position: relative;
-    overflow: hidden;
+/*===============================================================*/
+/* HOMEPAGE VIDEO */
+#homepage-video {
     width: 100%;
-    padding: 10px;
+    margin-top: 0.5rem;
+    padding: 0.5rem 10vw 5vw;
 }
 
-iframe {
-    width: 80vw;
-    height: 45vw;
+#homepage-video iframe {
+    width: 76vw;
+    height: 42.75vw;
 }
 
-/* Biography */
+/*===============================================================*/
+/* BIO */
 #text-paragraph {
     text-align: justify;
     padding: 0vw 10vw 0vw;
 }
 
-/* Contact form */
-.contact-form {
-    color: #30332E;
-    background-color: #FFFBFC;
-}
-
-input[type=text] {
-    width: 50%;
-    margin: 8px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-textarea {
-    width: 50%;
-    height: 300px;
-    margin: 8px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    resize: none;
-  }
-
-input[type=submit] {
-    width: 6rem;
-    margin: 8px;
-    padding: 10px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition-duration: 0.4s;
-}
-
-input[type=submit]:hover {
-    color: #FFFBFC;
-    background-color: #30332E;
-}
-
-/* Page ending */
-.footer {
-    color: #FFFBFC;
-    background-color: #30332E;
-}
-
-/* Image Gallery */
-.image-gallery {
-    padding: 0vw 10vw 0vw 10vw;
-}
-
-.image-gallery td {
-    width: 33.33%;
-    padding: 5px;
-}
-
-.image-gallery img {
-    max-width: 100%;
-    height: auto;
-}
-
-/* Music Playlist */
+/*===============================================================*/
+/* MUSIC PLAYLIST */
 .music-playlist {
     padding: 0vw 10vw 0vw 10vw;
 }
 
-.music-playlist tr {
+.music-playlist td {
     padding: 5px;
+    width: 80vw;
 }
 
 .music-playlist iframe {
     padding: 5px;
     border-radius: 12px;
-    height: 250px;
+    height: 220px;
+    width: 100%;
 }
 
+/*===============================================================*/
+/* IMG GALLERY */
+.image-gallery {
+    margin-top: 0.5rem;
+    padding: 0 10vw;
+}
+
+.image-gallery td {
+    width: 33.33%;
+    padding: 1vw;
+}
+
+.image-gallery img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/*===============================================================*/
+/* CONTACT FORM */
+.contact-form {
+    margin-top: 0.5rem;
+    padding: 0 10vw;
+}
+
+.contact-form table {
+    width: 100%;
+}
+
+.contact-form td {
+    padding: 1vw;
+}
+
+#send-a-message {
+    padding-top: 1vw;
+    margin-bottom: 5vw;
+}
+
+.contact-form input {
+    border-radius: 4px;
+    padding: 2vw;
+    margin: 1vw;
+}
+
+.contact-form input[type=text] {
+    width: 100%;
+    border: 1px solid #efefef;
+}
+
+.contact-form textarea {
+    width: 100%;
+    height: 300px;
+    padding: 2vw;
+    margin: 1vw;
+    border-radius: 4px;
+    border: 1px solid #efefef;
+    resize: none;
+}
+
+.contact-form input[type=submit] {
+    width: 6rem;
+    border: none;
+    background-color: #efefef;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.contact-form input[type=submit]:hover {
+    color: #FFFBFC;
+    background-color: #30332E;
+}
+
+/*===============================================================*/
+/* FOOTER */
+.music-playlist {
+    margin-top: 0.5rem;
+}
+.footer {
+    color: #FFFBFC;
+    background-color: #30332E;
+    padding: 3vw 0;
+    margin-top: 3rem;
+}
+
+.footer p {
+    margin-bottom: 0;
+}
+
+#gallery-body .footer {
+    margin-top: 15rem;
+}
+
+#contact-body .footer {
+    margin-top: 7rem;
+}
+
+/*===============================================================*/
 /*COLOR PALLETTE:
 https://coolors.co/010400-30332e-fffbfc-62bbc1-ec058e
 */
